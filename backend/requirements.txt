@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+joblib
+pandas
+openpyxl
+firebase-admin
+requests
+python-multipart
