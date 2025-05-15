@@ -1,24 +1,41 @@
-# Ignore Python virtual environments
+# Python (backend)
 venv/
 env/
-
-# Ignore environment config files
-.env
-
-# Ignore __pycache__ and compiled files
 __pycache__/
 *.pyc
 *.pyo
-
-# Ignore model files (optional)
+*.pyd
 *.pkl
 *.joblib
 *.h5
 *.keras
+*.sqlite3
+*.db
 
-# Ignore frontend build
+# Jupyter
+.ipynb_checkpoints/
+
+# Node/React (frontend)
 frontend/node_modules/
 frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/coverage/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
 
-# Ignore Jupyter checkpoints
-.ipynb_checkpoints/
+# General
+.env
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*.orig
+.vscode/
+.idea/
