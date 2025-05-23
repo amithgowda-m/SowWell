@@ -1,20 +1,22 @@
-from fastapi import FastAPI
 from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import JSONResponse
 import tensorflow as tf
 import numpy as np
-from . import crops, disease
-
 from PIL import Image
-# from io import BytesIO
+from io import BytesIO
+
+# Import your guides (adjust the path as needed)
 # from backend.services.agri_knowledge import disease_prevention_guide, crop_lifecycle_steps
 
 router = APIRouter()
 
-# Load model once
-model = tf.keras.models.load_model("D:/PROJECTS/SowWell/backend/ml/disease_model.keras")
+# Load model once at startup
+try:
+    model = tf.keras.models.load_model("D:/PROJECTS/SowWell/backend/ml/disease_model.keras")
+except Exception as e:
+    print(f"Failed to load model: {e}")
+    model = None
 
-# Must match class names used during training
 class_names = [
     "Apple___Apple_scab", "Apple___Black_rot", "Apple___Cedar_apple_rust", "Apple___healthy",
     "Blueberry___healthy", "Cherry_(including_sour)___Powdery_mildew", "Cherry_(including_sour)___healthy",
@@ -32,13 +34,16 @@ class_names = [
 
 @router.post("/predict-disease/")
 async def predict_disease(file: UploadFile = File(...)):
+    if model is None:
+        return JSONResponse(status_code=500, content={"error": "Model not loaded."})
+
     try:
         contents = await file.read()
-        image = Image.open(BytesIO(contents)).resize((128, 128))
+        image = Image.open(BytesIO(contents)).convert("RGB").resize((128, 128))
         image = np.expand_dims(np.array(image) / 255.0, axis=0)
 
         prediction = model.predict(image)
-        result_index = np.argmax(prediction)
+        result_index = int(np.argmax(prediction))
         disease_name = class_names[result_index]
 
         response = {

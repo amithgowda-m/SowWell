@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { recommendCrop } from "../utils/api";
 
 export default function CropRecommendation() {
@@ -20,7 +20,10 @@ export default function CropRecommendation() {
     setLoading(true);
     setError(null);
     try {
-      const res = await recommendCrop({ soilType, fertilizerName });
+      const res = await recommendCrop({ soilType, fertilizerName }) as {
+        recommended_crop: string;
+        crop_lifecycle: string[];
+      };
       setResult(res);
     } catch (e: any) {
       setError(e.message);

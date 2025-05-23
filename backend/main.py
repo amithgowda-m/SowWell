@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import disease, crops, auth, weather
+from routes import disease, crops, weather
 
 
 
@@ -26,8 +26,8 @@ app.add_middleware(
 # Include routers with prefixes
 app.include_router(disease.router, prefix="/api/disease", tags=["Disease Detection"])
 app.include_router(crops.router, prefix="/api/crops", tags=["Crop Advisor"])
-app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
-app.include_router(weather.router, prefix="/api/weather", tags=["Weather Info"])
+# app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
+# app.include_router(weather.router, prefix="/api/weather", tags=["Weather Info"])
 
 # Root endpoint (optional)
 @app.get("/", tags=["Root"])

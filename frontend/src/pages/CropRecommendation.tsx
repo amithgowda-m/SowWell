@@ -19,7 +19,7 @@ const CropRecommendation: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const res = await axios.post("/api/recommend-crop/", {
+    const res = await axios.post(	"/api/crops/recommend-crop/", {
       ...form,
       temperature: parseFloat(form.temperature),
       humidity: parseFloat(form.humidity),

@@ -7,8 +7,6 @@ import joblib
 
 # Load dataset
 df = pd.read_csv("../data/crop_data.csv")
-
-# Drop missing values
 df.dropna(inplace=True)
 
 # Encode categorical columns
@@ -20,8 +18,8 @@ for col in categorical_columns:
     label_encoders[col] = le
 
 # Features and label
-X = df.drop("Crop Type", axis=1)
-y = df["Crop Type"]
+X = df.drop("Fertilizer Name", axis=1)
+y = df["Fertilizer Name"]
 
 # Split
 X_train, X_test, y_train, y_test = train_test_split(
@@ -34,8 +32,8 @@ clf.fit(X_train, y_train)
 # Evaluate
 y_pred = clf.predict(X_test)
 print(classification_report(
-    y_test, y_pred, target_names=label_encoders["Crop Type"].classes_))
+    y_test, y_pred, target_names=label_encoders["Fertilizer Name"].classes_))
 
 # Save model and encoders
-joblib.dump(clf, "crop_model.pkl")
+joblib.dump(clf, "fertilizer_model.pkl")
 joblib.dump(label_encoders, "label_encoders.pkl")

@@ -14,7 +14,7 @@ const DiseaseDetection: React.FC = () => {
     if (!file) return;
     const formData = new FormData();
     formData.append("file", file);
-    const res = await axios.post("/api/predict-disease/", formData, {
+    const res = await axios.post("/api/disease/predict-disease/", formData, {
       headers: { "Content-Type": "multipart/form-data" },
     });
     setResult(res.data);
