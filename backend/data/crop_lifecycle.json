@@ -1,18 +1,17 @@
 {
-  "Wheat": [
-    "Soil preparation (2 weeks before sowing)",
-    "Seed selection and treatment",
-    "Sowing (November to December)",
-    "Irrigation every 20–25 days",
-    "Weed control and pesticide",
-    "Harvesting (March–April)"
-  ],
   "Rice": [
-    "Land leveling and puddling",
-    "Transplanting seedlings",
-    "Regular water logging",
-    "Fertilizer management",
-    "Pest control (stem borer, blast)",
-    "Harvesting (October)"
+    "Prepare the paddy field",
+    "Sow rice seeds",
+    "Flood the field",
+    "Apply DAP fertilizer",
+    "Monitor for pests",
+    "Harvest when grains mature"
+  ],
+  "Wheat": [
+    "Plough the field",
+    "Sow wheat seeds",
+    "Apply Urea",
+    "Irrigate during flowering",
+    "Harvest when golden"
   ]
 }

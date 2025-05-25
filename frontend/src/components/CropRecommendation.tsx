@@ -1,84 +1,163 @@
-import { useState } from "react";
-import { recommendCrop } from "../utils/api";
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function CropRecommendation() {
-  const [soilType, setSoilType] = useState("");
-  const [fertilizerName, setFertilizerName] = useState("");
-  // Add other input states as needed
-  const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<null | {
-    recommended_crop: string;
-    crop_lifecycle: string[];
-  }>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [form, setForm] = useState({
+    temperature: "",
+    humidity: "",
+    moisture: "",
+    soilType: "",
+    n: "",
+    p: "",
+    k: "",
+    rainfall: ""
+  });
 
-  async function handleSubmit() {
-    if (!soilType || !fertilizerName) {
-      setError("Please fill all required fields.");
-      return;
-    }
-    setLoading(true);
-    setError(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [result, setResult] = useState<{
+    recommended_crop: string;
+    fertilizer: string;
+    lifecycle: string[];
+    why_fertilizer: string;
+  } | null>(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
     try {
-      const res = await recommendCrop({ soilType, fertilizerName }) as {
+      setLoading(true);
+      setError(null);
+
+      const res = await axios.post(
+        "http://localhost:8000/api/crops/recommend-crop",
+        {
+          temperature: parseFloat(form.temperature),
+          humidity: parseFloat(form.humidity),
+          moisture: parseFloat(form.moisture),
+          soil_type: form.soilType,
+          n: parseFloat(form.n),
+          p: parseFloat(form.p),
+          k: parseFloat(form.k),
+          rainfall: parseFloat(form.rainfall)
+        }
+      );
+
+      console.log("API Response:", res.data); // Debug line
+
+      setResult(res.data as {
         recommended_crop: string;
-        crop_lifecycle: string[];
-      };
-      setResult(res);
-    } catch (e: any) {
-      setError(e.message);
+        fertilizer: string;
+        lifecycle: string[];
+        why_fertilizer: string;
+      });
+    } catch (err: any) {
+      setError(err.response?.data?.error || "An error occurred.");
     } finally {
       setLoading(false);
     }
-  }
+  };
 
   return (
     <div className="max-w-xl mx-auto p-6 bg-white rounded shadow-md mt-6">
       <h2 className="text-2xl font-semibold mb-4">Crop Recommendation</h2>
 
-      <label className="block mb-2 font-medium">Soil Type</label>
-      <input
-        type="text"
-        value={soilType}
-        onChange={(e) => setSoilType(e.target.value)}
-        className="w-full p-2 border rounded mb-4"
-        placeholder="Enter soil type"
-      />
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {/* Input fields */}
+        <input
+          name="temperature"
+          placeholder="Temperature"
+          value={form.temperature}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="humidity"
+          placeholder="Humidity"
+          value={form.humidity}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="moisture"
+          placeholder="Moisture"
+          value={form.moisture}
+          onChange={handleChange}
+          required
+        />
+        <select
+          name="soilType"
+          value={form.soilType}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Select Soil Type</option>
+          <option value="Sandy">Sandy</option>
+          <option value="Loamy">Loamy</option>
+          <option value="Clay">Clay</option>
+        </select>
+        <input
+          name="n"
+          placeholder="Nitrogen (N)"
+          value={form.n}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="p"
+          placeholder="Phosphorus (P)"
+          value={form.p}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="k"
+          placeholder="Potassium (K)"
+          value={form.k}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="rainfall"
+          placeholder="Rainfall (mm)"
+          value={form.rainfall}
+          onChange={handleChange}
+          required
+        />
 
-      <label className="block mb-2 font-medium">Fertilizer Name</label>
-      <input
-        type="text"
-        value={fertilizerName}
-        onChange={(e) => setFertilizerName(e.target.value)}
-        className="w-full p-2 border rounded mb-4"
-        placeholder="Enter fertilizer name"
-      />
+        <button
+          type="submit"
+          disabled={loading}
+          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full"
+        >
+          {loading ? "Fetching..." : "Get Recommendation"}
+        </button>
+      </form>
 
-      {/* Add more inputs here */}
-
-      <button
-        onClick={handleSubmit}
-        disabled={loading}
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
-      >
-        {loading ? "Fetching..." : "Get Recommendation"}
-      </button>
-
-      {error && (
-        <p className="mt-4 text-red-600 font-medium">{error}</p>
-      )}
+      {error && <p className="mt-4 text-red-600">{error}</p>}
 
       {result && (
-        <div className="mt-6 bg-blue-50 p-4 rounded border border-blue-200">
+        <div className="mt-6 bg-green-50 p-4 border border-green-200 rounded">
           <h3 className="text-xl font-bold mb-2">
-            Recommended Crop: {result.recommended_crop}
+            Recommended Crop:{" "}
+            <span className="text-green-800">{result.recommended_crop}</span>
           </h3>
-          <strong>Crop Lifecycle Steps:</strong>
-          <ol className="list-decimal list-inside ml-4 mt-1">
-            {result.crop_lifecycle.map((step, i) => (
-              <li key={i}>{step}</li>
+          <p>
+            <strong>Fertilizer:</strong> {result.fertilizer}
+          </p>
+          <p>{result.why_fertilizer}</p>
+          <h4 className="font-semibold mt-4">Lifecycle Steps:</h4>
+          <ul className="list-disc ml-5">
+            {result.lifecycle.map((step, idx) => (
+              <li key={idx}>{step}</li>
             ))}
-          </ol>
+          </ul>
         </div>
       )}
     </div>

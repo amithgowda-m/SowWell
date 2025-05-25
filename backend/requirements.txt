@@ -6,4 +6,7 @@ pandas
 openpyxl
 firebase-admin
 requests
-python-multipart
+python-multipart==0.0.12
+tensorflow      # or keras, if using Keras 3+
+numpy
+Pillow`
