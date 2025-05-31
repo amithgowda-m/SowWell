@@ -39,3 +39,8 @@ frontend/yarn-error.log*
 *.orig
 .vscode/
 .idea/
+
+# Disease data (keep local only)
+data/
+
+

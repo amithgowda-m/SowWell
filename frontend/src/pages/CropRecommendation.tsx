@@ -36,7 +36,15 @@ export default function CropRecommendation() {
       setError(null);
       setResult(null); // Reset previous result to avoid stale data
 
-      const res = await axios.post(
+      interface ApiResponse {
+        error?: string;
+        recommended_crop?: string;
+        fertilizer?: string;
+        lifecycle?: string[];
+        why_fertilizer?: string;
+      }
+
+      const res = await axios.post<ApiResponse>(
         "http://localhost:8000/api/crops/recommend-crop",
         {
           temperature: parseFloat(form.temperature),

@@ -1,12 +1,12 @@
-fastapi
-uvicorn
-scikit-learn
-joblib
-pandas
-openpyxl
-firebase-admin
-requests
+fastapi==0.78.0
+uvicorn==0.17.6
+scikit-learn==1.3.0
+joblib==1.3.2
+pandas==2.0.3
+openpyxl==3.1.2
+firebase-admin==6.2.0
+requests==2.31.0
 python-multipart==0.0.12
-tensorflow      # or keras, if using Keras 3+
-numpy
-Pillow`
+tensorflow==2.13.0    # or use keras if using Keras 3+
+numpy==1.24.3
+Pillow==9.5.0

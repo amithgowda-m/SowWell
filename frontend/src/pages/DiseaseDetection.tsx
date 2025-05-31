@@ -1,39 +1,99 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+interface PredictionResult {
+  disease: string;
+  confidence: number;
+  prevention_steps: string[];
+}
+
 const DiseaseDetection: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
-  const [result, setResult] = useState<any>(null);
+  const [prediction, setPrediction] = useState<PredictionResult | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) setFile(e.target.files[0]);
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = event.target.files?.[0];
+    if (selectedFile) {
+      setFile(selectedFile);
+      setError(null);
+    }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     if (!file) return;
+
+    setLoading(true);
+    setError(null);
+    setPrediction(null);
+
     const formData = new FormData();
     formData.append("file", file);
-    const res = await axios.post("/api/disease/predict-disease/", formData, {
-      headers: { "Content-Type": "multipart/form-data" },
-    });
-    setResult(res.data);
+
+    try {
+      const response = await axios.post(
+       "http://localhost:8000/api/disease/api/disease/predict",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      setPrediction(response.data as PredictionResult);
+    } catch (err: any) {
+      console.error("Error predicting disease:", err);
+      setError(
+        err.response?.data?.detail ||
+        "Failed to get prediction. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-8 mt-8">
-      <h2 className="text-2xl font-bold mb-6 text-green-700">Disease Detection</h2>
-      <form className="space-y-4" onSubmit={handleSubmit}>
-        <input type="file" accept="image/*" onChange={handleFileChange} required className="w-full" />
-        <button className="w-full bg-green-600 text-white rounded py-2 hover:bg-green-700 transition" type="submit">Detect</button>
-      </form>
-      {result && (
-        <div className="mt-8 bg-green-50 p-4 rounded">
-          <h3 className="text-xl font-semibold mb-2">Disease: <span className="text-green-800">{result.disease}</span></h3>
-          <h4 className="font-semibold">Prevention Steps:</h4>
-          <ul className="list-disc list-inside">
-            {result.prevention_steps.map((step: string, idx: number) => (
-              <li key={idx}>{step}</li>
+    <div className="max-w-xl mx-auto p-6 bg-white rounded shadow-md mt-6">
+      <h2 className="text-2xl font-semibold mb-4">Plant Disease Detection</h2>
+      <p className="mb-4 text-gray-600">
+        Upload a plant image to detect possible diseases and get prevention suggestions.
+      </p>
+
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleFileChange}
+        disabled={loading}
+        className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100"
+      />
+
+      <button
+        onClick={handleSubmit}
+        disabled={!file || loading}
+        className={`mt-4 w-full px-4 py-2 rounded text-white ${
+          !file || loading ? "bg-gray-400 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
+        }`}
+      >
+        {loading ? "Predicting..." : "Detect Disease"}
+      </button>
+
+      {loading && <p className="mt-4 text-blue-600">Analyzing image...</p>}
+      {error && <p className="mt-4 text-red-600">{error}</p>}
+
+      {prediction && (
+        <div className="mt-6 bg-green-50 p-4 border border-green-200 rounded">
+          <h3 className="text-xl font-bold mb-2 text-green-800">
+            Predicted Disease: {prediction.disease}
+          </h3>
+          <p>
+            <strong>Confidence:</strong> {(prediction.confidence * 100).toFixed(2)}%
+          </p>
+          <h4 className="font-semibold mt-4">Prevention Steps:</h4>
+          <ul className="list-disc ml-5">
+            {prediction.prevention_steps.map((step, index) => (
+              <li key={index}>{step}</li>
             ))}
           </ul>
         </div>
