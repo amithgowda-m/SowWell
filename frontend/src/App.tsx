@@ -1,5 +1,9 @@
+// App.tsx
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import WelcomePage from "./pages/WelcomePage";
+import WeatherDashboard from "./pages/WeatherDashboard";
 import CropRecommendation from "./pages/CropRecommendation";
 import DiseaseDetection from "./pages/DiseaseDetection";
 
@@ -17,6 +21,9 @@ const App: React.FC = () => {
         </div>
         <div className="space-x-4">
           <Link to="/" className="text-white hover:underline">
+            Home
+          </Link>
+          <Link to="/recommendation" className="text-white hover:underline">
             Crop Recommendation
           </Link>
           <Link to="/disease" className="text-white hover:underline">
@@ -27,8 +34,10 @@ const App: React.FC = () => {
 
       <main className="container mx-auto p-4">
         <Routes>
-          <Route path="/" element={<CropRecommendation />} />
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/recommendation" element={<CropRecommendation />} />
           <Route path="/disease" element={<DiseaseDetection />} />
+           <Route path="/weather" element={<WeatherDashboard />} />
         </Routes>
       </main>
     </Router>
