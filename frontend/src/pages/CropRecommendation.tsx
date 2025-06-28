@@ -45,7 +45,7 @@ export default function CropRecommendation() {
       }
 
       const res = await axios.post<ApiResponse>(
-        "http://localhost:8000/api/crops/recommend-crop",
+        "https://sowwell.onrender.com",
         {
           temperature: parseFloat(form.temperature),
           humidity: parseFloat(form.humidity),
