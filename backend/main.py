@@ -3,7 +3,6 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from routes import disease, crops, weather
-# from routes.weather import weather_router
 import logging
 
 # Set up logging
@@ -33,10 +32,10 @@ async def log_requests(request: Request, call_next):
     logger.info(f"Response status: {response.status_code}")
     return response
 
-# Include routers
-app.include_router(disease.router, prefix="/api/disease", tags=["Disease Detection"])
-app.include_router(crops.router, prefix="/api/crops", tags=["Crop Advisor"])
-app.include_router(weather.router, prefix="/api/weather", tags=["Weather Info"])
+# Include routers (prefix already in each router file)
+app.include_router(disease.router)
+app.include_router(crops.router)
+app.include_router(weather.router)
 
 # Root endpoint
 @app.get("/", tags=["Root"])

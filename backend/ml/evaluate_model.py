@@ -1,11 +1,10 @@
-# evaluate_model.py
-
 import os
 import torch
 from torchvision import transforms, datasets, models
 from torch.utils.data import DataLoader
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classification_report
+from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
+import seaborn as sns
 import pandas as pd
 
 # Device configuration
@@ -66,21 +65,28 @@ cm_df = pd.DataFrame(cm, index=class_names, columns=class_names)
 cm_df.to_csv("confusion_matrix.csv")
 print("Saved confusion_matrix.csv")
 
-# High-Resolution Confusion Matrix Image
-fig, ax = plt.subplots(figsize=(14, 12))  # Larger figure size
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
-disp.plot(cmap=plt.cm.Blues, xticks_rotation=45, ax=ax, values_format='d')  # Integer format
+# Plotting Confusion Matrix with Seaborn for better clarity
+plt.figure(figsize=(18, 16))  # Larger figure size
+sns.set(font_scale=1.0)  # Adjust font scale
 
-# Improve readability
-plt.title("Confusion Matrix", fontsize=18)
-plt.xlabel("Predicted Label", fontsize=14)
-plt.ylabel("True Label", fontsize=14)
-plt.xticks(fontsize=10)
-plt.yticks(fontsize=10)
+# Create heatmap
+ax = sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False,
+                 xticklabels=class_names, yticklabels=class_names)
+
+# Rotate labels
+ax.set_xticklabels(ax.get_xticklabels(), rotation=90, fontsize=10)
+ax.set_yticklabels(ax.get_yticklabels(), rotation=0, fontsize=10)
+
+# Titles and Labels
+plt.title("Confusion Matrix", fontsize=20)
+plt.xlabel("Predicted Label", fontsize=16)
+plt.ylabel("True Label", fontsize=16)
+
+# Layout adjustments
 plt.tight_layout()
 
 # Save high-quality PNG
-plt.savefig("confusion_matrix.png", dpi=600)  # High DPI for clear print-quality image
+plt.savefig("confusion_matrix.png", dpi=600, bbox_inches='tight', pad_inches=0.5)
 print("Saved high-resolution confusion_matrix.png")
 
 plt.show()

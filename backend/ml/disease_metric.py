@@ -16,21 +16,19 @@ classes = [
     'Tomato_Yellow_Leaf_Curl', 'Tomato_mosaic_virus', 'Tomato_healthy'
 ]
 
-# Metrics for each class (Precision, Recall, F1-Score) extracted from the provided data
+# Metrics for each class (Precision, Recall, F1-Score)
 precision = [
     0.98, 0.99, 0.99, 0.98, 0.99, 1.00, 1.00, 0.96, 1.00, 0.96, 0.99,
     0.99, 0.98, 1.00, 1.00, 1.00, 0.99, 0.99, 0.98, 0.98, 1.00, 0.97,
     0.99, 1.00, 0.99, 1.00, 1.00, 1.00, 0.96, 0.90, 0.92, 0.96,
     0.94, 0.94, 0.89, 0.98, 0.97, 0.97
 ]
-
 recall = [
     0.98, 0.99, 1.00, 0.98, 1.00, 0.99, 0.99, 0.96, 1.00, 0.96, 1.00,
     0.98, 0.99, 1.00, 1.00, 1.00, 0.99, 0.99, 0.97, 0.99, 0.99, 0.96,
     0.98, 1.00, 1.00, 1.00, 1.00, 1.00, 0.97, 0.88, 0.92, 0.95,
     0.93, 0.94, 0.91, 0.98, 0.99, 0.99
 ]
-
 f1_score = [
     0.98, 0.99, 0.99, 0.98, 0.99, 1.00, 1.00, 0.96, 1.00, 0.96, 1.00,
     0.99, 0.99, 1.00, 1.00, 1.00, 0.99, 0.99, 0.98, 0.99, 1.00, 0.97,
@@ -46,8 +44,8 @@ r1 = np.arange(len(classes))
 r2 = [x + bar_width for x in r1]
 r3 = [x + bar_width for x in r2]
 
-# Create the bar plot with a larger figure size for readability
-plt.figure(figsize=(20, 8))
+# Create the bar plot with a high-resolution figure for publication
+plt.figure(figsize=(30, 10), dpi=600)
 plt.bar(r1, precision, color='b', width=bar_width, edgecolor='grey', label='Precision')
 plt.bar(r2, recall, color='g', width=bar_width, edgecolor='grey', label='Recall')
 plt.bar(r3, f1_score, color='r', width=bar_width, edgecolor='grey', label='F1-Score')
@@ -62,5 +60,9 @@ plt.legend()
 # Adjust layout to prevent label cutoff
 plt.tight_layout()
 
-# Display the plot
-plt.show()
+# Save the high-resolution image
+output_path = "/mnt/data/plant_disease_metrics_plot_highres.png"
+plt.savefig(output_path, format='png')
+
+# Display path to the image
+output_path

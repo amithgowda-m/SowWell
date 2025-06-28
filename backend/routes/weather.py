@@ -7,7 +7,7 @@ from fastapi.responses import JSONResponse
 router = APIRouter(prefix="/api/weather", tags=["Weather Info"])
 
 # Replace with your actual Ambee API key
-AMBEE_API_KEY = ""
+AMBEE_API_KEY = "9d6b3ef390a3e60a5aed9eb8e12c9bc0df6c6795ffbab8183e8484c27d5f9a05"
 
 @router.get("/forecast")
 async def get_weather(place: str = Query(...)):

@@ -56,8 +56,13 @@ print(classification_report(all_labels, all_preds, target_names=class_names))
 
 cm = confusion_matrix(all_labels, all_preds)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
-plt.figure(figsize=(10, 8))
-disp.plot(cmap=plt.cm.Blues, xticks_rotation=45)
-plt.title("Confusion Matrix")
+
+fig, ax = plt.subplots(figsize=(16, 14))  # ⬅️ Bigger size for clarity
+disp.plot(cmap=plt.cm.Blues, xticks_rotation=45, ax=ax, colorbar=True)
+
+plt.title("Confusion Matrix", fontsize=18)
+plt.xticks(rotation=45, ha='right', fontsize=10)
+plt.yticks(fontsize=10)
 plt.tight_layout()
 plt.show()
+
