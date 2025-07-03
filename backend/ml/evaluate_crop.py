@@ -4,6 +4,11 @@ from sklearn.metrics import confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+# Define or load y_test and y_pred before using them
+# Example: load from files or generate from your model
+# y_test = ...
+# y_pred = ...
+
 # Generate confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 

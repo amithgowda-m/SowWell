@@ -34,7 +34,7 @@ const DiseaseDetection: React.FC = () => {
 
     try {
       const response = await axios.post(
-        `https://sowwell.onrender.com`, // 👈 Add language param
+        `http://localhost:8000/api/disease/predict?lang=${language}`, // 👈 Add language param
         formData,
         {
           headers: {

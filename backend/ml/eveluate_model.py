@@ -50,19 +50,22 @@ with torch.no_grad():
         all_preds.extend(preds.cpu().numpy())
         all_labels.extend(labels.cpu().numpy())
 
-# Report & Confusion Matrix
+# Classification Report
 print("\nClassification Report:")
 print(classification_report(all_labels, all_preds, target_names=class_names))
 
+# Confusion Matrix
 cm = confusion_matrix(all_labels, all_preds)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
 
-fig, ax = plt.subplots(figsize=(16, 14))  # ⬅️ Bigger size for clarity
+# Plot and Save Confusion Matrix
+fig, ax = plt.subplots(figsize=(24, 20), dpi=600)
 disp.plot(cmap=plt.cm.Blues, xticks_rotation=45, ax=ax, colorbar=True)
 
-plt.title("Confusion Matrix", fontsize=18)
-plt.xticks(rotation=45, ha='right', fontsize=10)
-plt.yticks(fontsize=10)
-plt.tight_layout()
-plt.show()
+ax.set_title("Confusion Matrix", fontsize=24)
+ax.tick_params(axis='x', labelsize=12)
+ax.tick_params(axis='y', labelsize=12)
 
+plt.tight_layout()
+plt.savefig("confusion_matrix.png", bbox_inches="tight")  # Save to file
+plt.show()
