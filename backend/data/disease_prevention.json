@@ -1,0 +1,395 @@
+{
+  "Apple___Apple_scab": {
+    "prevention_en": [
+      "Rake up all fallen leaves and bad apples in the fall.",
+      "Snip off any sick-looking branches.",
+      "Plant apple trees that are naturally strong against scab.",
+      "Ensure branches aren't too crowded for good air circulation.",
+      "Apply fungicides early in the season and keep spraying to protect new leaves."
+    ],
+    "prevention_kn": [
+      "ಶರತ್ಕಾಲದಲ್ಲಿ ಉದುರಿದ ಎಲೆಗಳು ಮತ್ತು ಕೆಟ್ಟ ಸೇಬುಗಳನ್ನು ಮರದ ಕೆಳಗಿನಿಂದ ತೆಗೆದುಹಾಕಿ.",
+      "ಯಾವುದೇ ಅನಾರೋಗ್ಯಕರವಾಗಿ ಕಾಣುವ ಕೊಂಬೆಗಳನ್ನು ಕತ್ತರಿಸಿ.",
+      "ಸ್ಕ್ಯಾಬ್‌ಗೆ ನೈಸರ್ಗಿಕವಾಗಿ ಬಲವಾಗಿರುವ ಸೇಬಿನ ಮರಗಳನ್ನು ನೆಡಿರಿ.",
+      "ಕೊಂಬೆಗಳ ನಡುವೆ ಗಾಳಿ ಚಲಿಸಲು ಸಾಕಷ್ಟು ಜಾಗವಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
+      "ವರ್ಷದ ಆರಂಭದಲ್ಲಿ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಸಿಂಪಡಿಸಿ ಮತ್ತು ಹೊಸ ಎಲೆಗಳನ್ನು ರಕ್ಷಿಸಲು ಮುಂದುವರಿಸಿ."
+    ]
+  },
+  "Apple___Black_Rot": {
+    "prevention_en": [
+      "Remove all shriveled apples from tree and ground.",
+      "Cut off dead or diseased branches carefully to avoid wounds.",
+      "Control insect pests that create entry points for disease.",
+      "Apply fungicides when flowers bloom and fruit starts growing."
+    ],
+    "prevention_kn": [
+      "ಮರದಲ್ಲಿ ಮತ್ತು ನೆಲದ ಮೇಲೆ ಇರುವ ಎಲ್ಲಾ ಕುಗ್ಗಿದ ಸೇಬುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ಮತ್ತು ನಾಶಪಡಿಸಿ.",
+      "ಯಾವುದೇ ಸತ್ತ ಅಥವಾ ರೋಗಗ್ರಸ್ತ ಕೊಂಬೆಗಳನ್ನು ಕತ್ತರಿಸಿ.",
+      "ಮರಕ್ಕೆ ರಂಧ್ರಗಳನ್ನು ಮಾಡುವ ಕೀಟಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ.",
+      "ಹೂಬಿಡುವಾಗ ಮತ್ತು ಹಣ್ಣು ಬೆಳೆಯಲು ಪ್ರಾರಂಭಿಸಿದಾಗ ವಿಶೇಷ ಸಿಂಪಡಣೆಗಳನ್ನು ಬಳಸಿರಿ."
+    ]
+  },
+  "Apple___Cedar_Apple_Rust": {
+    "prevention_en": [
+      "Avoid planting apple and cedar/juniper trees close together.",
+      "Choose rust-resistant apple varieties.",
+      "Apply fungicides when cedar trees release spores in spring.",
+      "Focus on prevention as sprays cannot cure visible orange spots."
+    ],
+    "prevention_kn": [
+      "ಸೇಬಿನ ಮತ್ತು ಸೀಡರ್ ಮರಗಳನ್ನು ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ ನೆಡದಿರುವುದು.",
+      "ರಸ್ಟ್-ಪ್ರೂಫ್ ಸೇಬಿನ ಮರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+      "ಸೀಡರ್ ಮರಗಳು ವಸಂತಕಾಲದಲ್ಲಿ ತಮ್ಮ ಸಣ್ಣ 'ಜರ್ಮ್ ಬೀಜಗಳನ್ನು' ಬಿಡುಗಡೆ ಮಾಡಿದಾಗ ಸಿಂಪಡಿಸಿ.",
+      "ಒಮ್ಮೆ ಕಿತ್ತಳೆ ಕಲೆಗಳು ಕಾಣಿಸಿಕೊಂಡರೆ, ಆ ವರ್ಷ ಅವುಗಳನ್ನು ಗುಣಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ; ಮುಂದಿನ ವರ್ಷದ ತಡೆಗಟ್ಟುವಿಕೆಗೆ ಗಮನ ಹರಿಸಿ."
+    ]
+  },
+  "Cherry___Powdery_Mildew": {
+    "prevention_en": [
+      "Select cherry varieties resistant to powdery mildew.",
+      "Prune trees to improve air flow.",
+      "Water soil directly, avoid wetting leaves especially at night.",
+      "Use neem oil or other plant oils as treatments.",
+      "Remove heavily infected parts."
+    ],
+    "prevention_kn": [
+      "ಮೈಲ್ಡ್ಯೂ ವಿರುದ್ಧ ಹೋರಾಡುವ ಚೆರ್ರಿ ವಿಧಗಳನ್ನು ಆರಿಸಿ.",
+      "ಮರವನ್ನು ಕತ್ತರಿಸಿ ಗಾಳಿ ಚೆನ್ನಾಗಿ ಚಲಿಸುವಂತೆ ಮಾಡಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ, ವಿಶೇಷವಾಗಿ ರಾತ್ರಿಯಲ್ಲಿ.",
+      "ಬೇವಿನ ಎಣ್ಣೆಯಂತಹ ತೈಲಗಳು ಅಥವಾ ಇತರ ಸಸ್ಯ ಔಷಧಿಗಳನ್ನು ಬಳಸಿ.",
+      "ಹೆಚ್ಚು ರೋಗಗ್ರಸ್ತ ಭಾಗಗಳನ್ನು ಕತ್ತರಿಸಿ."
+    ]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "prevention_en": [
+      "Plant corn seeds resistant to Cercospora leaf spot.",
+      "Remove or bury old corn stalks to eliminate inoculum.",
+      "Rotate crops annually to reduce disease buildup.",
+      "Apply fungicides early before disease becomes severe."
+    ],
+    "prevention_kn": [
+      "ಈ ರೋಗವನ್ನು ತಡೆಗಟ್ಟುವ ಜೋಳದ ಬೀಜಗಳನ್ನು ನೆಡಿರಿ.",
+      "ಹಳೆಯ ಜೋಳದ ಕಾಂಡಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ಅಥವಾ ಹೂತುಹಾಕಿ.",
+      "ಪ್ರತಿ ವರ್ಷ ಬೆಳೆ ಸರದಿ ಪಾಲಿಸಿ.",
+      "ರೋಗ ತೀವ್ರವಾಗುವ ಮೊದಲು ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "prevention_en": [
+      "Use corn varieties resistant to rust.",
+      "Plant corn earlier to allow strong growth before rust onset."
+    ],
+    "prevention_kn": [
+      "ರಸ್ಟ್ ನಿರೋಧಕ ಜೋಳದ ಬೀಜಗಳನ್ನು ಬಳಸಿ.",
+      "ಜೋಳವನ್ನು ಸ್ವಲ್ಪ ಬೇಗನೆ ನೆಡಿ, ರಸ್ಟ್ ಬರುವ ಮೊದಲು ಬಲವಾಗಿ ಬೆಳೆಯಲು."
+    ]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "prevention_en": [
+      "Plant corn seeds resistant to northern leaf blight.",
+      "Bury old stalks and practice crop rotation.",
+      "Apply fungicides if necessary, but resistant seeds are best."
+    ],
+    "prevention_kn": [
+      "ನಾರ್ದರ್ನ್ ಲೀಫ್ ಬ್ಲೈಟ್ ತಡೆಯುವ ಜೋಳದ ಬೀಜಗಳನ್ನು ನೆಡಿ.",
+      "ಹಳೆಯ ಕಾಂಡಗಳನ್ನು ಹೂತುಹಾಕಿ ಮತ್ತು ಬೆಳೆ ಸರದಿ ಪಾಲಿಸಿ.",
+      "ಅಗತ್ಯವಿದ್ದರೆ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ, ಆದರೆ ನಿರೋಧಕ ಬೀಜಗಳು ಉತ್ತಮ."
+    ]
+  },
+  "Grape___Black_Rot": {
+    "prevention_en": [
+      "Remove and destroy all shriveled grapes.",
+      "Prune vines to allow good air circulation.",
+      "Keep weeds away from vines.",
+      "Apply fungicides regularly during grape growth."
+    ],
+    "prevention_kn": [
+      "ಎಲ್ಲಾ ಕುಗ್ಗಿದ ದ್ರಾಕ್ಷಿಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ಮತ್ತು ನಾಶಪಡಿಸಿ.",
+      "ಬಳ್ಳಿಗಳನ್ನು ಕತ್ತರಿಸಿ ಗಾಳಿ ಚೆನ್ನಾಗಿ ಚಲಿಸುವಂತೆ ಮಾಡಿ.",
+      "ಕಳೆಗಳನ್ನು ದೂರವಿಡಿ.",
+      "ದ್ರಾಕ್ಷಿಗಳು ಬೆಳೆಯುವಾಗ ನಿಯಮಿತವಾಗಿ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Grape___Esca_Black_Measles": {
+    "prevention_en": [
+      "Start with certified healthy young vines.",
+      "Prune vines on dry days to promote quick healing.",
+      "Maintain vine health and reduce stress.",
+      "Remove severely infected vines to prevent spread."
+    ],
+    "prevention_kn": [
+      "ಪ್ರಮಾಣೀಕೃತ, ಆರೋಗ್ಯಕರ ಕಿರಿಯ ದ್ರಾಕ್ಷಿ ಬಳ್ಳಿಗಳನ್ನು ಬಳಸಿ.",
+      "ಒಣ ದಿನಗಳಲ್ಲಿ ಬಳ್ಳಿಗಳನ್ನು ಕತ್ತರಿಸಿ.",
+      "ಬಳ್ಳಿಗಳನ್ನು ಆರೋಗ್ಯಕರವಾಗಿಡಿ ಮತ್ತು ಒತ್ತಡ ಕಡಿಮೆ ಮಾಡಿ.",
+      "ಗಂಭೀರವಾಗಿ ರೋಗಗ್ರಸ್ತ ಬಳ್ಳಿಗಳನ್ನು ತೆಗೆದುಹಾಕಿ."
+    ]
+  },
+  "Grape___Leaf_Blight": {
+    "prevention_en": [
+      "Clean up fallen leaves.",
+      "Prune vines for good airflow.",
+      "Use fungicides that also protect against black rot.",
+      "Apply sprays to protect healthy leaves."
+    ],
+    "prevention_kn": [
+      "ಉದುರಿದ ಎಲೆಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ಬಳ್ಳಿಗಳನ್ನು ಕತ್ತರಿಸಿ ಗಾಳಿಯ ಹರಿವು ಹೆಚ್ಚಿಸಿ.",
+      "ಬ್ಲಾಕ್ ರಾಟ್‌ಗೆ ಬಳಸುವ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ.",
+      "ಆರೋಗ್ಯಕರ ಎಲೆಗಳನ್ನು ರಕ್ಷಿಸಲು ಸಿಂಪಡಣೆಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Orange___Huanglongbing_Citrus_Greening": {
+    "prevention_en": [
+      "Buy only certified, disease-free orange trees.",
+      "Control psyllid insect vectors with sprays and traps.",
+      "Remove infected trees immediately to protect others.",
+      "Follow local regulations on citrus plant movement."
+    ],
+    "prevention_kn": [
+      "ಪ್ರಮಾಣೀಕೃತ, ರೋಗ ಮುಕ್ತ ಕಿತ್ತಳೆ ಮರಗಳನ್ನು ಮಾತ್ರ ಖರೀದಿಸಿ.",
+      "ಸೈಲಿಡ್ ಕೀಟಗಳನ್ನು ಸಿಂಪಡಣೆಗಳು ಮತ್ತು ಬಲೆಗಳಿಂದ ನಿಯಂತ್ರಿಸಿ.",
+      "ರೋಗಗ್ರಸ್ತ ಮರಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ.",
+      "ಸಿಟ್ರಸ್ ಸಸ್ಯಗಳನ್ನು ಸ್ಥಳಾಂತರಿಸುವ ನಿಯಮಗಳನ್ನು ಅನುಸರಿಸಿ."
+    ]
+  },
+  "Peach___Bacterial_Spot": {
+    "prevention_en": [
+      "Plant peach varieties resistant to bacterial spot.",
+      "Prune trees for good air circulation.",
+      "Maintain tree health with proper nutrition.",
+      "Apply copper-based sprays in winter or early spring.",
+      "Avoid injuring trees to prevent infection."
+    ],
+    "prevention_kn": [
+      "ಬ್ಯಾಕ್ಟೀರಿಯಾ ಸ್ಪಾಟ್ ತಡೆಯುವ ಪೀಚ್ ಮರಗಳನ್ನು ನೆಡಿ.",
+      "ಮರಗಳನ್ನು ಕತ್ತರಿಸಿ ಗಾಳಿ ಚೆನ್ನಾಗಿ ಚಲಿಸುವಂತೆ ಮಾಡಿ.",
+      "ಮರಗಳನ್ನು ಉತ್ತಮ ಆಹಾರದಿಂದ ಆರೋಗ್ಯವಾಗಿಡಿ.",
+      "ಹಿಮಕಾಲ ಅಥವಾ ವಸಂತದ ಆರಂಭದಲ್ಲಿ ತಾಮ್ರ ಆಧಾರಿತ ಸಿಂಪಡಣೆಗಳನ್ನು ಬಳಸಿ.",
+      "ಮರಕ್ಕೆ ಗಾಯವಾಗದಂತೆ ಎಚ್ಚರವಹಿಸಿ."
+    ]
+  },
+  "Bell_Pepper___Bacterial_Spot": {
+    "prevention_en": [
+      "Use certified healthy seeds or seedlings.",
+      "Select pepper varieties resistant to bacterial spot.",
+      "Rotate planting sites annually.",
+      "Clean up old plant debris.",
+      "Water soil directly, avoid wetting leaves.",
+      "Apply copper-based fungicides."
+    ],
+    "prevention_kn": [
+      "ಆರೋಗ್ಯಕರ ಬೀಜಗಳು ಅಥವಾ ಸಣ್ಣ ಸಸ್ಯಗಳನ್ನು ಬಳಸಿ.",
+      "ಬ್ಯಾಕ್ಟೀರಿಯಾ ಸ್ಪಾಟ್ ನಿರೋಧಕ ಮೆಣಸಿನಕಾಯಿ ವಿಧಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+      "ಪ್ರತಿ ವರ್ಷ ನೆಡುವ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ.",
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ತಾಮ್ರ ಆಧಾರಿತ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Potato___Early_Blight": {
+    "prevention_en": [
+      "Plant potato varieties resistant to early blight.",
+      "Avoid planting potatoes in the same spot for several years.",
+      "Remove old plant debris.",
+      "Maintain good nutrition and watering practices.",
+      "Water soil, not leaves.",
+      "Apply fungicides when plants start flowering."
+    ],
+    "prevention_kn": [
+      "ಅರ್ಲಿ ಬ್ಲೈಟ್ ನಿರೋಧಕ ಆಲೂಗಡ್ಡೆ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ಒಂದೇ ಜಾಗದಲ್ಲಿ ಆಲೂಗಡ್ಡೆಗಳನ್ನು ವರ್ಷಗಳಿಂದ ನೆಡಬೇಡಿ.",
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ಆಹಾರ ಮತ್ತು ನೀರು ಸರಿಯಾಗಿ ಕೊಡಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಸಸ್ಯಗಳು ಹೂಬಿಡಲು ಪ್ರಾರಂಭಿಸಿದಾಗ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Potato___Late_Blight": {
+    "prevention_en": [
+      "Use certified, healthy seed potatoes.",
+      "Remove wild potato plants and weeds nearby.",
+      "Rotate planting sites for several years.",
+      "Hill soil around plants to protect tubers.",
+      "Water soil, not leaves.",
+      "Apply aggressive fungicide sprays regularly.",
+      "Remove and destroy infected plants immediately."
+    ],
+    "prevention_kn": [
+      "ಪ್ರಮಾಣೀಕೃತ, ಆರೋಗ್ಯಕರ ಬೀಜ ಆಲೂಗಡ್ಡೆಗಳನ್ನು ಬಳಸಿ.",
+      "ಹತ್ತಿರದ ಕಾಡು ಆಲೂಗಡ್ಡೆ ಸಸ್ಯಗಳು ಮತ್ತು ಕಳೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ.",
+      "ಕೆಲವು ವರ್ಷಗಳ ಕಾಲ ಒಂದೇ ಜಾಗದಲ್ಲಿ ನೆಡಬೇಡಿ.",
+      "ಸಸ್ಯಗಳ ಸುತ್ತಲೂ ಮಣ್ಣನ್ನು ರಾಶಿ ಹಾಕಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಬಲವಾದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಬಳಸಿ.",
+      "ರೋಗಗ್ರಸ್ತ ಸಸ್ಯಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ ಮತ್ತು ನಾಶಪಡಿಸಿ."
+    ]
+  },
+  "Squash___Powdery_Mildew": {
+    "prevention_en": [
+      "Plant squash varieties resistant to powdery mildew.",
+      "Provide adequate spacing for air circulation.",
+      "Water soil, not leaves.",
+      "Clean up old plant debris.",
+      "Use oils or fungicides as needed.",
+      "Cover all affected areas with sprays."
+    ],
+    "prevention_kn": [
+      "ಮೈಲ್ಡ್ಯೂ ನಿರೋಧಕ ಸ್ಕ್ವಾಷ್ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ಸಸ್ಯಗಳಿಗೆ ಗಾಳಿ ಚಲಿಸಲು ಸಾಕಷ್ಟು ಜಾಗ ನೀಡಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ತೈಲಗಳು ಅಥವಾ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ.",
+      "ಎಲ್ಲಾ ಧೂಳಿನ ಭಾಗಗಳನ್ನು ಸಿಂಪಡಿಸಿ."
+    ]
+  },
+  "Strawberry___Leaf_Scorch": {
+    "prevention_en": [
+      "Plant strawberry varieties resistant to leaf scorch.",
+      "Remove old, infected leaves.",
+      "Provide good spacing for air circulation.",
+      "Water soil rather than leaves.",
+      "Apply fungicides to protect new leaves."
+    ],
+    "prevention_kn": [
+      "ಲೀಫ್ ಸ್ಕಾರ್ಚ್ ನಿರೋಧಕ ಸ್ಟ್ರಾಬೆರಿ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ಹಳೆಯ, ರೋಗಗ್ರಸ್ತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ.",
+      "ಸಸ್ಯಗಳಿಗೆ ಗಾಳಿ ಚಲಿಸಲು ಜಾಗ ನೀಡಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಹೊಸ ಎಲೆಗಳನ್ನು ರಕ್ಷಿಸಲು ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "prevention_en": [
+      "Use certified healthy seeds or seedlings.",
+      "Plant resistant tomato varieties.",
+      "Rotate planting sites every few years.",
+      "Clean up old plant debris.",
+      "Water soil, not leaves.",
+      "Apply copper-based fungicides.",
+      "Remove very sick plants."
+    ],
+    "prevention_kn": [
+      "ಆರೋಗ್ಯಕರ ಬೀಜಗಳು ಅಥವಾ ಸಣ್ಣ ಸಸ್ಯಗಳನ್ನು ಬಳಸಿ.",
+      "ನಿರೋಧಕ ಟೊಮೆಟೊ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ಕೆಲವು ವರ್ಷಗಳಿಗೊಮ್ಮೆ ನೆಡುವ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ.",
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ತಾಮ್ರ ಆಧಾರಿತ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ.",
+      "ಹೆಚ್ಚು ರೋಗಗ್ರಸ್ತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ."
+    ]
+  },
+  "Tomato___Early_blight": {
+    "prevention_en": [
+      "Plant resistant tomato varieties.",
+      "Rotate planting sites.",
+      "Remove lower leaves touching soil.",
+      "Use stakes or cages to keep plants off ground.",
+      "Water soil, not leaves.",
+      "Apply fungicides at flowering."
+    ],
+    "prevention_kn": [
+      "ನಿರೋಧಕ ಟೊಮೆಟೊ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ನೆಡುವ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ.",
+      "ಮಣ್ಣಿಗೆ ತಾಗುವ ಕೆಳಗಿನ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ.",
+      "ಪಾಲಗಳು ಅಥವಾ ಬಲೆಗಳನ್ನು ಬಳಸಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಹೂಬಿಡುವಾಗ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Tomato___Late_blight": {
+    "prevention_en": [
+      "Use healthy seedlings only.",
+      "Remove wild tomato and potato plants nearby.",
+      "Rotate planting sites.",
+      "Provide good spacing for air circulation.",
+      "Water soil, not leaves.",
+      "Apply strong fungicides frequently.",
+      "Remove and destroy infected plants immediately."
+    ],
+    "prevention_kn": [
+      "ಆರೋಗ್ಯಕರ ಸಣ್ಣ ಸಸ್ಯಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ.",
+      "ಹತ್ತಿರದ ಕಾಡು ಟೊಮೆಟೊ ಮತ್ತು ಆಲೂಗಡ್ಡೆ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ.",
+      "ನೆಡುವ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ.",
+      "ಸಸ್ಯಗಳಿಗೆ ಗಾಳಿ ಚಲಿಸಲು ಉತ್ತಮ ಜಾಗ ನೀಡಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಬಲವಾದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಬಳಸಿ.",
+      "ರೋಗಗ್ರಸ್ತ ಸಸ್ಯಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ ಮತ್ತು ನಾಶಪಡಿಸಿ."
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "prevention_en": [
+      "Plant resistant tomato varieties, especially in greenhouses.",
+      "Ensure good airflow.",
+      "Control humidity.",
+      "Clean up old plant debris.",
+      "Apply fungicides."
+    ],
+    "prevention_kn": [
+      "ನಿರೋಧಕ ಟೊಮೆಟೊ ವಿಧಗಳನ್ನು ನೆಡಿ, ಹಸಿರುಮನೆಗಳಲ್ಲಿ ವಿಶೇಷವಾಗಿ.",
+      "ಚೆನ್ನಾಗಿ ಗಾಳಿ ಹರಿಯುವಂತೆ ಮಾಡಿ.",
+      "ಆರ್ದ್ರತೆಯನ್ನು ನಿಯಂತ್ರಿಸಿ.",
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "prevention_en": [
+      "Clean up old plant debris.",
+      "Rotate planting sites.",
+      "Water soil, not leaves.",
+      "Use stakes or cages.",
+      "Apply fungicides when spots appear."
+    ],
+    "prevention_kn": [
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ನೆಡುವ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಪಾಲಗಳು ಅಥವಾ ಬಲೆಗಳನ್ನು ಬಳಸಿ.",
+      "ಕಲೆಗಳು ಕಾಣಿಸಿಕೊಂಡಾಗ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "prevention_en": [
+      "Plant resistant tomato varieties.",
+      "Clean up old plant debris.",
+      "Rotate planting sites.",
+      "Provide good spacing.",
+      "Water soil, not leaves.",
+      "Use fungicides similar to early blight."
+    ],
+    "prevention_kn": [
+      "ನಿರೋಧಕ ಟೊಮೆಟೊ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ಹಳೆಯ ಸಸ್ಯದ ಭಾಗಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.",
+      "ನೆಡುವ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ.",
+      "ಸಸ್ಯಗಳಿಗೆ ಉತ್ತಮ ಜಾಗ ನೀಡಿ.",
+      "ಮಣ್ಣಿಗೆ ನೀರು ಹಾಕಿ, ಎಲೆಗಳಿಗೆ ಅಲ್ಲ.",
+      "ಅರ್ಲಿ ಬ್ಲೈಟ್‌ಗೆ ಬಳಸುವ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ."
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "prevention_en": [
+      "Plant resistant tomato varieties.",
+      "Control whitefly vectors with sprays, mulches, or covers.",
+      "Remove infected plants immediately.",
+      "Keep weeds away."
+    ],
+    "prevention_kn": [
+      "ವೈರಸ್ ನಿರೋಧಕ ಟೊಮೆಟೊ ವಿಧಗಳನ್ನು ನೆಡಿ.",
+      "ಬಿಳಿ ನೊಣಗಳನ್ನು ಸಿಂಪಡಣೆಗಳು, ಮಲ್ಚ್ ಅಥವಾ ಬಲೆಗಳಿಂದ ನಿಯಂತ್ರಿಸಿ.",
+      "ರೋಗಗ್ರಸ್ತ ಸಸ್ಯಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ.",
+      "ಕಳೆಗಳನ್ನು ದೂರವಿಡಿ."
+    ]
+  },
+  "TTomato___Tomato_mosaic_virus": {
+    "prevention_en": [
+      "Use clean seeds and seedlings.",
+      "Practice strict hygiene: wash hands and tools frequently.",
+      "Remove and destroy infected plants immediately."
+    ],
+    "prevention_kn": [
+      "ಸ್ವಚ್ಛ ಬೀಜಗಳು ಮತ್ತು ಸಣ್ಣ ಸಸ್ಯಗಳನ್ನು ಬಳಸಿ.",
+      "ಕೈಗಳು ಮತ್ತು ಉಪಕರಣಗಳನ್ನು ಆಗಾಗ್ಗೆ ತೊಳೆಯಿರಿ.",
+      "ರೋಗಗ್ರಸ್ತ ಸಸ್ಯಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ ಮತ್ತು ನಾಶಪಡಿಸಿ."
+    ]
+  }
+}
+

@@ -40,7 +40,10 @@ frontend/yarn-error.log*
 .vscode/
 .idea/
 
-# Disease data (keep local only)
-data/
+# Disease data (partial ignore)
+data/crop_data.csv
+data/Disease/
 
-
+# Allow specific JSON files to be committed
+!data/crop_lifecycle.json
+!data/disease_prevention.json
